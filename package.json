@@ -1,0 +1,107 @@
+{
+  "name": "@fagansc/m365components",
+  "version": "0.1.0",
+  "private": false,
+  "description": "",
+  "type": "module",
+  "homepage": "https://fagan.cloud/m365components",
+  "contributors": [
+    "Fagan, Shawn <FaganSC@gmail.com>"
+  ],
+  "keywords": [
+    "microsoft 365",
+    "m365",
+    "office 365",
+    "office365",
+    "react",
+    "react components",
+    "react web parts",
+    "react spfx",
+    "react sharepoint",
+    "react office 365",
+    "react office365",
+    "react microsoft 365",
+    "react microsoft365",
+    "web parts",
+    "webparts",
+    "web part",
+    "sharepoint",
+    "tools",
+    "spfx",
+    "framework",
+    "fluent ui",
+    "forms"
+  ],
+  "bugs": {
+    "url": "https://github.com/FaganSC/m365components/issues"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "build": "tsc && vite build",
+    "test": "vitest run",
+    "test-watch": "vitest",
+    "test:ui": "vitest --ui",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepare": "npm run build"
+  },
+  "author": "Shawn Fagan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaganSC/m365components.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.6",
+    "@eslint/compat": "^1.2.7",
+    "@storybook/addon-essentials": "^8.6.11",
+    "@storybook/addon-interactions": "^8.6.11",
+    "@storybook/addon-onboarding": "^8.6.11",
+    "@storybook/blocks": "^8.6.11",
+    "@storybook/react": "^8.6.11",
+    "@storybook/react-vite": "^8.6.11",
+    "@storybook/test": "^8.6.11",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/react": "^19.0.12",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-storybook": "^0.12.0",
+    "husky": "^9.1.7",
+    "jsdom": "^26.0.0",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "storybook": "^8.6.11",
+    "styled-components": "^6.1.16",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.3",
+    "vite-plugin-dts": "^4.5.3",
+    "vitest": "^3.0.9"
+  },
+  "peerDependencies": {
+    "react": "^18.3.0"
+  },
+  "dependencies": {
+    "@fluentui/react-icons": "^2.0.292",
+    "react-dom": "^18.3.1"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run format",
+      "npm run lint",
+      "npm run test"
+    ]
+  }
+}
